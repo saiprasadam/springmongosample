@@ -27,7 +27,7 @@ public class CourseCatalogueServerAppApplication extends SpringBootServletInitia
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 	String configLocation = System.getProperty("global.appconf.dir"); //get the default config directory location
-	    String configPath = configLocation + File.separator + "springApplication"  + File.separator + "application.properties"; //set the configpath of this application instance exclusively
+	    String configPath = configLocation + File.separator + "springApplication"  + File.separator + "application-docker.properties"; //set the configpath of this application instance exclusively
 	    System.out.println("Configpath: " + configPath);
 	    System.out.println("Starting to run Spring boot app...");
 	    if(configLocation != null && !configLocation.isEmpty()) {
